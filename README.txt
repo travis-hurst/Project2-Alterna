@@ -4,7 +4,7 @@ Project 2 – JavaScript / node.js / Reactjs - Alterna-Canvas
 
 
 ## Contributers
-    Isabella Hall -
+    Isabella Hall - hallib@mail.uc.edu
     Travis Hurst - hurstts@mail.uc.edu
     Preston Gavey -
 
