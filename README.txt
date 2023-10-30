@@ -7,6 +7,7 @@ Project 2 – JavaScript / node.js / Reactjs - Alterna-Canvas
     Isabella Hall -
     Travis Hurst - hurstts@mail.uc.edu
     Preston Gavey -
+	Allison Meier - meierao@mail.uc.edu
 
 ## Project Functionality
 
