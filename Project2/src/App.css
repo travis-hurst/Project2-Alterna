@@ -55,7 +55,17 @@
 
 .announcement-select {
   margin-top: 35%;
+  padding-top: 2px;
   position: fixed;
+  border-radius: 0%;
+  cursor: pointer;
+  pointer-events: auto;
+  background-color: #00000000;
+}
+
+.announcement-select:hover {
+  border: 2px solid transparent;
+  border-color: #da6619;
 }
 
 .bounty-select {
