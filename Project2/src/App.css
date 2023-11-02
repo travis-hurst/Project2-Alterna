@@ -1,42 +1,73 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.bg {
+  /* Background Image */
+  background-image: url(./assets/background-room.jpg);
+  height: 100vh;
+
+  /* Center and scale the background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.interactable-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 97%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game-col-1 {
+  height: 100%;
+  width: 20%;
+  max-width: 20%;
+  padding-left: 2%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.game-col-2 {
+  height: 100%;
+  width: 32%;
+  max-width: 32%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
-.card {
-  padding: 2em;
+.game-col-3 {
+  height: 100%;
+  width: 32%;
+  max-width: 32%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
-.read-the-docs {
-  color: #888;
+.game-col-4 {
+  height: 100%;
+  width: 16%;
+  max-width: 16%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.announcement-select {
+  margin-top: 35%;
+  position: fixed;
+}
+
+.bounty-select {
+  margin-top: 12%;
+  position: fixed;
+}
+
+.navigate-select {
+  margin-top: 27%;
+  position: fixed;
+}
+
+.achievement-select {
+  margin-top: 12%;
+  position: fixed;
 }
