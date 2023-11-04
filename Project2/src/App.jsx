@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import Achievements from './components/Achievements'
-import bountyBoard from "./assets/bounty-board.jpg"
-import announcementTable from "./assets/announcement-table.svg"
+import bountyBoard from './assets/bounty-board.jpg'
+import announcementTable from './assets/announcement-table.svg'
+import navigateDesk from './assets/navigate-desk.svg'
 
 function App() {
 
@@ -10,13 +11,13 @@ function App() {
       <div className="bg">
           <div className="interactable-container">
             <div className="game-col-1">
-              <button className="announcement-select"><img src={announcementTable} alt="..." width="500" height="350"></img></button>
+              <button className="announcement-select"><img src={announcementTable} alt="..." width="450" height="300"></img></button>
             </div>
             <div className="game-col-2">
-              <button className="bounty-select"><img src={bountyBoard} alt="..." width="500" height="350"></img></button>
+              <button className="bounty-select"><img src={bountyBoard} alt="..." width="550" height="400"></img></button>
             </div>
             <div className="game-col-3">
-            <button className="navigate-select">Navigate</button>
+            <button className="navigate-select"><img src={navigateDesk} alt="..." width="700" height="550"></img></button>
             </div>
             <div className="game-col-4">
               <button className="achievement-select">Achievements
