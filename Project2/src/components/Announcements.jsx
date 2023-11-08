@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import './Announcements.css'
 
-export const Announcements = ({ openModal, setOpenModal }) => {
+export const Announcements = ({ openModalAnnouncements, setOpenAnnouncements }) => {
   const [input, setInput] = useState("");
   const [emailSend, setEmailSend] = useState(false);
 
@@ -81,7 +81,7 @@ export const Announcements = ({ openModal, setOpenModal }) => {
                     </table>        
             </div>
         <div>
-            <button className="modal-footer-button modal-button-cancel" onClick={() => {setOpenModal(false);}}>
+            <button className="modal-footer-button modal-button-cancel" onClick={() => {setOpenAnnouncements(false);}}>
             Close
             </button>
         </div>
