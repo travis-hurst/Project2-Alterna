@@ -3,8 +3,6 @@ import { useState } from "react";
 import './Announcements.css'
 
 export const Announcements = ({ openModalAnnouncements, setOpenAnnouncements }) => {
-  const [input, setInput] = useState("");
-  const [emailSend, setEmailSend] = useState(false);
 
   return (
     <>
