@@ -7,6 +7,7 @@ import bountyBoard from './assets/bounty-board.jpg'
 import announcementTable from './assets/announcement-table.svg'
 import navigateDesk from './assets/navigate-desk.svg'
 import achievementShelf from './assets/achievement-shelf.svg'
+import ClassNavigation from './components/ClassNavigation'
 
 function App() {
 
