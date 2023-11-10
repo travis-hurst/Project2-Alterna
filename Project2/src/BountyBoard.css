@@ -6,6 +6,10 @@ body {
   font-family: 'Courier New', sans-serif;
 }
 
+.highlight {
+  border: 2px solid rgb(222, 215, 132); /* Adjust styling as needed */
+}
+
 .app-container {
   display: flex;
   flex-direction: column;
@@ -22,7 +26,7 @@ body {
 .poster {
   display: flex;
   background: url('/Users/isabellahall/Desktop/Project2-Alterna/Project2/src/assets/images/poster.png') center/cover no-repeat; /* Replace 'url_to_your_background_image.jpg' with your image URL */
-  border: 5px solid #000000; /* Add a black border */
+  border: 10px solid #000000; /* Add a black border */
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
