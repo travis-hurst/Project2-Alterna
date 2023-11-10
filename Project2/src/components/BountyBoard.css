@@ -21,6 +21,9 @@ body {
   text-align: center;
 }
 
+.highlight {
+  border: 2px solid rgb(222, 215, 132); /* Adjust styling as needed */
+}
 
 .poster {
   display: flex;
