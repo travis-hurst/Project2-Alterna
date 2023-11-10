@@ -1,36 +1,33 @@
-import React from 'react'
-import { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHatCowboy } from '@fortawesome/free-solid-svg-icons'
-import './BountyBoard.css'
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHatCowboy } from '@fortawesome/free-solid-svg-icons';
+import './BountyBoard.css';
 
-
-
-export const BountyBoard = ({ openModalBounty, setOpenBounty }) => {
-
-  const BountyIcon = () => (
-    <div className="icon">
-      <FontAwesomeIcon icon={faHatCowboy} size="3x" color="black" />
-      {/* Adjust the size and color values as needed */}
+const BountyIcon = () => (
+  <div className="icon">
+    <FontAwesomeIcon icon={faHatCowboy} size="3x" color="black" />
+    {/* Adjust the size and color values as needed */}
+  </div>
+);
+const BountyPoster = ({ className, assignment, dueDate, bounty }) => (
+  <div className="poster">
+    <div className="poster-text">
+      <h3>{className}</h3>
+      <p>{assignment}</p>
+      <p>Due Date: {dueDate}</p>
+      <p>Bounty: {bounty}</p>
     </div>
-  );
-  const BountyPoster = ({ className, assignment, dueDate, bounty }) => (
-    <div className="poster">
-      <div className="poster-text">
-        <h3>{className}</h3>
-        <p>{assignment}</p>
-        <p>Due Date: {dueDate}</p>
-        <p>Bounty: {bounty}</p>
-      </div>
-      <BountyIcon />
-    </div>
-  );
+    <BountyIcon />
+  </div>
+);
+
+const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0); // Track the current index for navigation
-  
+
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
   };
-  
+
   const handleNextClick = () => {
     // Assuming there are two boards, adjust the condition accordingly if you have more
     setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, 1));
@@ -62,11 +59,8 @@ export const BountyBoard = ({ openModalBounty, setOpenBounty }) => {
           <BountyPoster className="User Interface" assignment="Final Documentation" dueDate="02 Dec" bounty="$15000" imageSrc="url_to_your_image" />
         </div>
       </div>
-      <div>
-          <button className="modal-footer-button modal-button-cancel" onClick={() => {setOpenBounty(false);}}>
-          Close
-          </button>
-      </div>
     </div>
   );
-};
+}
+
+export default App;
