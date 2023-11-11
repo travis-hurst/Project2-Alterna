@@ -2,6 +2,10 @@
 .modal-container {
     width: 240%;
     height: 50%;
+    background-image: url(../assets/images/woodenbackground.jpg);
+    /* Center and scale the background image */
+    background-position: center;
+    background-repeat: repeat;
     margin-top: 50%;
     gap: 10px;
     pointer-events: auto;
@@ -9,11 +13,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #ffffff;
     box-sizing: border-box;
     box-shadow: #7393B3 0px 5px 15px;
     border: 1px solid;
     border-color: #7393B3;
+    align-items: center;
     border-radius: 4px;
     outline: 0;
     padding: 8px 12px;
@@ -54,18 +58,18 @@
 
   .modal-button-cancel {
     margin-top: 7px;
+    font-weight: bold;
     background-color: #da6619;
     color: #271b13;
   }
 
   .ann-box-header {
-    padding-top: 5px;
-    padding-left: 15px;
     font-family: Georgia; 
     font-weight: bold;
-    width: 100%;
-    color: #333;
-    font-size: 44px !important;
+    width: 40%;
+    background-color: rgb(182, 156, 122);
+    text-align: center;
+    font-size: 36px !important;
   }
     
   .ann-box {
@@ -76,7 +80,7 @@
     color: #333;
     font-size: 18px !important;
     text-align: center;
-    background-color:  #e8f0e3;
+    background-color:	#FAF9F6;
     overflow-y: scroll;
     overflow-x: hidden;
   }

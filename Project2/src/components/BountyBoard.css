@@ -7,6 +7,9 @@
   /* Center and scale the background image */
   background-position: center;
   background-repeat: repeat;
+  box-shadow: #7393B3 0px 5px 15px;
+  border: 1px solid;
+  border-color: #7393B3;
   z-index: 1;
 }
 
@@ -28,6 +31,8 @@ body {
 
 .page-title {
   text-align: center;
+  background-color: rgb(182, 156, 122);
+  width:40%;
 }
 
 
