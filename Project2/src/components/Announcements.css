@@ -53,6 +53,7 @@
   }
 
   .modal-button-cancel {
+    margin-top: 7px;
     background-color: #da6619;
     color: #271b13;
   }
