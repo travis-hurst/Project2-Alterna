@@ -1,8 +1,8 @@
 /* BountyBoard.css */
 .bg-2 {
   /* Background Image */
-  height: 78%;
-  width: 150%;
+  height: 72%;
+  width: 180%;
   background-image: url(../assets/images/woodenbackground.jpg);
   /* Center and scale the background image */
   background-position: center;
