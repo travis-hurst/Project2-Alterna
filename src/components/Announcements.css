@@ -63,6 +63,13 @@
     color: #271b13;
   }
 
+  .modal-button-cancel:hover{
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-color: #271b13;
+
+}
+
   .ann-box-header {
     font-family: Georgia; 
     font-weight: bold;
@@ -70,6 +77,8 @@
     background-color: rgb(182, 156, 122);
     text-align: center;
     font-size: 36px !important;
+    border: 2px solid transparent;
+    border-color: #725d47;
   }
     
   .ann-box {
@@ -86,6 +95,9 @@
   }
 
   .form-check-input[type=checkbox]  {
-    margin-top: 10px;
     border-radius: 1.25em;
+    margin: 4px 0 0;
+    line-height: normal;
+    width: 20px;
+    height: 20px;
   }

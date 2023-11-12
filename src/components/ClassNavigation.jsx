@@ -68,7 +68,7 @@ export const ClassNavigation = ({setOpenNavigation}) => {
 
                             </div>
                             <div className='enterButton'>
-                                <button onClick=
+                                <button className='modal-footer-button modal-button-cancel' onClick=
                                     {() => close()}>
                                         Close
                                 </button>
@@ -135,7 +135,7 @@ export const ClassNavigation = ({setOpenNavigation}) => {
 
                             </div>
                             <div className='enterButton'>
-                                <button onClick=
+                                <button className='modal-footer-button modal-button-cancel' onClick=
                                     {() => close()}>
                                         Close
                                 </button>
@@ -202,7 +202,7 @@ export const ClassNavigation = ({setOpenNavigation}) => {
 
                             </div>
                             <div className='enterButton'>
-                                <button onClick=
+                                <button className='modal-footer-button modal-button-cancel' onClick=
                                     {() => close()}>
                                         Close
                                 </button>

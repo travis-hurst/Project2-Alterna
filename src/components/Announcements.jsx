@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './Announcements.css'
 
 export const Announcements = ({ openModalAnnouncements, setOpenAnnouncements }) => {
@@ -13,7 +13,7 @@ export const Announcements = ({ openModalAnnouncements, setOpenAnnouncements }) 
                     <caption className="table-label"></caption>
                     <thead>
                         <tr>
-                        <th scope="col"></th>
+                        <th scope="col" style={{fontSize:'22px'}}>Read</th>
                         <th scope="col" style={{width:'15%', maxwidth:'15%', fontSize:'22px'}}>Time</th>
                         <th scope="col" style={{width:'15%', maxwidth:'15%', fontSize:'22px'}}>Class</th>
                         <th scope="col" style={{width:'15%', maxwidth:'15%', fontSize:'22px'}}>Teacher</th>
@@ -23,7 +23,7 @@ export const Announcements = ({ openModalAnnouncements, setOpenAnnouncements }) 
                     </thead>
                     <tbody>
                         <tr>
-                        <th scope="row"><input className="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched"></input></th>
+                        <th scope="row"><input className="form-check-input me-1" type="checkbox" value="" id="checkbox1"></input></th>
                         <td>5:14 PM <br></br> 14 November</td>
                         <td>User Interface</td>
                         <td>Dr. Jillian Aurisano</td>
@@ -32,7 +32,7 @@ export const Announcements = ({ openModalAnnouncements, setOpenAnnouncements }) 
                         <br></br>
                         <hr style={{width:'5500%'}}></hr>
                         <tr>
-                        <th scope="row"><input className="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched"></input></th>
+                        <th scope="row"><input className="form-check-input me-1" type="checkbox" value="" id="checkbox2"></input></th>
                         <td>12:10 PM <br></br> 14 November</td>
                         <td>Senior Design</td>
                         <td>Dr. Armando Dorado</td>
@@ -41,7 +41,7 @@ export const Announcements = ({ openModalAnnouncements, setOpenAnnouncements }) 
                         <br></br>
                         <hr style={{width:'5500%'}}></hr>
                         <tr>
-                        <th scope="row"><input className="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched"></input></th>
+                        <th scope="row"><input className="form-check-input me-1" type="checkbox" value="" id="checkbox3"></input></th>
                         <td>1:18 PM <br></br> 13 November</td>
                         <td>Computer Graphics</td>
                         <td>Dr. Felix Manchester</td>
@@ -50,7 +50,7 @@ export const Announcements = ({ openModalAnnouncements, setOpenAnnouncements }) 
                         <br></br>
                         <hr style={{width:'5500%'}}></hr>
                         <tr>
-                        <th scope="row"><input className="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched"></input></th>
+                        <th scope="row"><input className="form-check-input me-1" type="checkbox" value="" id="checkbox4"></input></th>
                         <td>10:11 AM <br></br> 13 November</td>
                         <td>Senior Design</td>
                         <td>Dr. Armando Dorado</td>
@@ -59,7 +59,7 @@ export const Announcements = ({ openModalAnnouncements, setOpenAnnouncements }) 
                         <br></br>
                         <hr style={{width:'5500%'}}></hr>
                         <tr>
-                        <th scope="row"><input className="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched"></input></th>
+                        <th scope="row"><input className="form-check-input me-1" type="checkbox" value="" id="checkbox5"></input></th>
                         <td>9:18 AM <br></br> 13 November</td>
                         <td>User Interface</td>
                         <td>Dr. Jillian Aurisano</td>
@@ -68,7 +68,7 @@ export const Announcements = ({ openModalAnnouncements, setOpenAnnouncements }) 
                         <br></br>
                         <hr style={{width:'5500%'}}></hr>
                         <tr>
-                        <th scope="row"><input className="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched"></input></th>
+                        <th scope="row"><input className="form-check-input me-1" type="checkbox" value="" id="checkbox6"></input></th>
                         <td>4:32 PM <br></br> 12 November</td>
                         <td>Senior Design</td>
                         <td>Dr. Armando Dorado</td>

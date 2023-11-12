@@ -32,6 +32,8 @@ body {
 .page-title {
   text-align: center;
   background-color: rgb(182, 156, 122);
+  border: 2px solid transparent;
+  border-color: #725d47;
   width:40%;
 }
 
