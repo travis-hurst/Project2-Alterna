@@ -2,24 +2,26 @@ import React from 'react'
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import './ClassNavigation.css';
+import { useState } from 'react';
 
-function ClassNavigation() {
+export const ClassNavigation = ({setOpenNavigation}) => {
     return(
-        <div>
+        <>
+        <div className='navigationBackground'>
           <link rel="stylesheet" href="ClassNavigation.css"></link>
-          <div className="classTitle"> Classes </div>
+          <div className="classTitle ann-box-header"> Classes </div>
           <div className="classes">
-            <div className="classBox">
+                <div className="classBox userInterface">
             <Popup trigger=
-                {<b> User Interface </b>} 
+                {<b> User <br></br>Interface </b>} 
                 modal nested>
                 {
                     close => (
-                        <div className='lockModal'>
-                            <div className='content'>
+                        <div className='lockModal  classPopup'>
+                            <div className='content courseInfo'>
                               <div className='lockTitle'>
                                 <div className='moduleBlock'>
-                                    <div className="className">User Interface</div>
+                                    <div className="className ann-box-header">User Interface</div>
                                     <div className='module'><b>Syllabus</b></div>
                                     <div className="syllabus moduleContent">UserInterfaceSyllabus.txt</div>
                                 </div>
@@ -76,19 +78,19 @@ function ClassNavigation() {
                 }
               </Popup>
             </div>
-            <div className="classBox">
+            <div className="classBox computerGraphics">
             <Popup trigger=
-                {<b> Finite Automata </b>} 
+                {<b> Computer <br></br>Graphics </b>} 
                 modal nested>
                 {
                     close => (
-                        <div className='lockModal'>
-                            <div className='content'>
+                        <div className='lockModal classPopup'>
+                            <div className='content  courseInfo'>
                               <div className='lockTitle'>
                                 <div className='moduleBlock'>
-                                    <div className="className">Finite Automata</div>
+                                    <div className="className ann-box-header">Computer Graphics</div>
                                     <div className='module'><b>Syllabus</b></div>
-                                    <div className="syllabus moduleContent">FiniteAutomataSyllabus.txt</div>
+                                    <div className="syllabus moduleContent">ComputerGraphicsSyllabus.txt</div>
                                 </div>
                                 <div className='moduleBlock'>
                                     <div className='module'>
@@ -143,17 +145,17 @@ function ClassNavigation() {
                 }
               </Popup>
             </div>
-            <div className="classBox">
+            <div className="classBox seniorDesign">
             <Popup trigger=
-                {<b> Senior Design </b>} 
+                {<b> Senior <br></br> Design </b>} 
                 modal nested>
                 {
                     close => (
-                        <div className='lockModal'>
-                            <div className='content'>
+                        <div className='lockModal  classPopup'>
+                            <div className='content  courseInfo'>
                               <div className='lockTitle'>
                                 <div className='moduleBlock'>
-                                    <div className="className">Senior Design</div>
+                                    <div className="className ann-box-header">Senior Design</div>
                                     <div className='module'><b>Syllabus</b></div>
                                     <div className="syllabus moduleContent">SeniorDesignSyllabus.txt</div>
                                 </div>
@@ -210,10 +212,16 @@ function ClassNavigation() {
                 }
               </Popup>
             </div>
-          </div>
+    
             
+          </div>
+          <button className='modal-footer-button modal-button-cancel' onClick=
+                {() => {setOpenNavigation(false);}}>
+                    Close
+            </button>
         </div>
-        
+
+        </>
     )
 }
 
