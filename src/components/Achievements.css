@@ -81,11 +81,22 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: contain;
+    height: fit-content;
+    width: fit-content;
+    max-height: 100px;
+    max-width: 100px;
 }
 .award img {
     object-fit: contain;
     height: fit-content;
     width: fit-content;
-    max-height: 120px;
-    max-width: 120px;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+/*================== MINI MODAL ELEMENTS ==================*/
+
+.tooltip {
+    justify-content: center;
 }
