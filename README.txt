@@ -51,6 +51,7 @@ https://nodejs.org/en.
 NOTE: You may need to install the following dependencies using the terminal commands below:
 
 npm install reactjs-popup --save
+npm install @mui/material @emotion/react @emotion/styled
 npm i --save @fortawesome/fontawesome-svg-core
 npm i --save @fortawesome/free-solid-svg-icons
 npm i --save @fortawesome/react-fontawesome@latest
