@@ -5,13 +5,12 @@
     background-image: url(../assets/images/woodenbackground.jpg);
     /* Center and scale the background image */
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
     z-index: 1;
     height: 60%;
-    width: 39%;
+    width: 32%;
     position: absolute;
-    right: 30%;
+    right: 10%;
     top: 10%;
     text-align: center;
     box-shadow: #7393B3 0px 5px 15px;

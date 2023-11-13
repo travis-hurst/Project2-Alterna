@@ -31,34 +31,15 @@ function App() {
             </div>
 
             <div className="game-col-3">
-              <button className="navigate-select" onClick={() => {setOpenNavigation(true);}}>
-                  <img 
-                    src={navigateDesk} 
-                    alt="..." 
-                    width="100%" 
-                    height="auto" 
-                    style={{objectFit: 'contain'}}
-                  />
-              </button>
-            {openModalNavigation && <ClassNavigation openModalNavigation={openModalNavigation} setOpenNavigation={setOpenNavigation} />}
+            <button className="navigate-select" onClick={() => {setOpenNavigation(true);}}><img src={navigateDesk} alt="..." width="100%" height="auto" objectFit="contain"></img></button>
+            {openModalNavigation && <ClassNavigation openModalBounty={openModalNavigation} setOpenNavigation={setOpenNavigation} />}
             </div>
 
             <div className="game-col-4">
-              <button className="achievement-select" onClick={() => {setOpenAchievements(true);}}>
-                <img 
-                  src={achievementShelf} 
-                  alt="..." 
-                  width="100%" 
-                  height="auto" 
-                  style={{objectFit: 'contain'}}
-                />
-              </button>
-              {openModalAchievements && 
-                <Achievements 
-                  openModalAchievements={openModalAchievements} 
-                  setOpenNavigation={setOpenAchievements} 
-                />}
+              <button className="achievement-select" onClick={() => {setOpenAchievements(true);}}><img src={achievementShelf} alt="..." width="100%" height="auto" style={{objectFit: 'contain'}}></img></button>
+              {openModalAchievements && <Achievements openModalAchievements={openModalAchievements} setOpenAchievements={setOpenAchievements} />}
             </div>
+
 
           </div>
       </div>
