@@ -1,0 +1,113 @@
+/* BountyBoard.css */
+.bg-2 {
+  /* Background Image */
+  height: 72%;
+  width: 180%;
+  background-image: url(../assets/images/woodenbackground.jpg);
+  /* Center and scale the background image */
+  background-position: center;
+  background-repeat: repeat;
+  box-shadow: #7393B3 0px 5px 15px;
+  border: 1px solid;
+  border-color: #7393B3;
+  z-index: 1;
+}
+
+body {
+  margin: 0;
+  font-family: 'Courier New', sans-serif;
+}
+
+.highlight {
+  border: 2px solid rgb(222, 215, 132); /* Adjust styling as needed */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.page-title {
+  text-align: center;
+  background-color: rgb(182, 156, 122);
+  border: 2px solid transparent;
+  border-color: #725d47;
+  width:40%;
+}
+
+
+.poster {
+  display: flex;
+  background-image: url(../assets/images/poster.png); /* Replace 'url_to_your_background_image.jpg' with your image URL */
+  /* Center and scale the background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 10px solid #000000; /* Add a black border */
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  flex: 1;
+  max-width: 400px;
+}
+
+.poster-text {
+  flex: 29;
+  color: #000000;
+  font-weight:bolder;
+}
+
+.poster img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+.bounty-board {
+  background-color: rgb(182, 156, 122);
+  border: 10px solid #725d47;
+  border-radius: 10px;
+  padding: 10px; /* Reduced padding */
+  margin-top: 10px; /* Reduced margin top */
+  width: 100%;
+  height: 35%;
+  box-sizing: border-box;
+}
+
+.board-title {
+  margin-top: 0;
+  text-align: center;
+  color: #090909;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.posters-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px; /* Adjusted margin top */
+  font-weight:bolder;
+}
+
+.arrow-button {
+  background-color: #725d47;
+  color: #fff;
+  border: none;
+  padding: 8px; /* Adjusted padding */
+  margin: 5px;
+  cursor: pointer;
+  font-size: larger;
+  border-radius: 5px;
+  font-weight:bolder;
+}
+
+.arrow-button:hover {
+  background-color: #5e4f3b;
+}

@@ -1,0 +1,117 @@
+.classBox{
+
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 21%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/vintage_old_paper.png);
+    /* Center and scale the background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.classBox:hover{
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-color: #da6619;
+
+}
+
+
+.userInterface{
+ margin-left: 5%
+}
+.computerGraphics{
+margin-left: 12%
+}
+.seniorDesign{
+ margin-left: 12%
+}
+.classes{
+    display: flex;
+    margin-top: 10%;
+}
+.classTitle{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 30%;
+
+}
+.module{
+    text-decoration: bold;
+    padding: 10px;
+    border: 2px solid black;
+}
+.moduleContent{
+    padding-left: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    border-top: 0px;
+}
+.syllabus{
+    color: blue;
+    text-decoration: underline;
+    padding: 10px;
+}
+.className{
+    font-size: 32px;
+    text-align: center;
+    margin-left: 30%;
+
+    margin-bottom: 5%;
+}
+.moduleBlock{
+    margin-bottom: 15px;
+    padding-top: 3%;
+    padding: 15px;
+}
+.navigationBackground{
+    background-image: url(../assets/images/woodenbackground.jpg);
+    /* Center and scale the background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    height: 60%;
+    width: 39%;
+    position: absolute;
+    right: 30%;
+    top: 10%;
+    text-align: center;
+    box-shadow: #7393B3 0px 5px 15px;
+    border: 1px solid;
+    border-color: #7393B3;
+}
+.classPopup{
+    background-image: url(../assets/images/poster.png);
+    /* Center and scale the background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    box-shadow: #7393B3 0px 5px 15px;
+    border: 1px solid;
+    border-color: #7393B3;
+}
+.popup-content{
+    padding: 0px;
+}
+.courseInfo{
+    text-align: left;
+}
+.modal-button-cancel{
+    margin-top: 10%;
+}
+.enterButton{
+    border: none;
+    color: black;
+    padding-bottom: 10px;
+}

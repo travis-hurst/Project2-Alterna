@@ -1,0 +1,103 @@
+
+.modal-container {
+    width: 240%;
+    height: 50%;
+    background-image: url(../assets/images/woodenbackground.jpg);
+    /* Center and scale the background image */
+    background-position: center;
+    background-repeat: repeat;
+    margin-top: 50%;
+    gap: 10px;
+    pointer-events: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    box-shadow: #7393B3 0px 5px 15px;
+    border: 1px solid;
+    border-color: #7393B3;
+    align-items: center;
+    border-radius: 4px;
+    outline: 0;
+    padding: 8px 12px;
+    z-index: 1;
+  }
+  
+  .modal-container-sent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 670px;
+    height: 400px;
+    gap: 20px;
+    font-weight: 500px;
+  }
+
+  .modal-footer-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 82px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    font-weight: 500px;
+    position: relative;
+    outline: none;
+    gap: 8px;
+    user-select: none;
+    height: 40px;
+    padding: 0 16px;
+    text-decoration: none;
+  }
+
+  .modal-button-cancel {
+    margin-top: 7px;
+    font-weight: bold;
+    background-color: #da6619;
+    color: #271b13;
+  }
+
+  .modal-button-cancel:hover{
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-color: #271b13;
+
+}
+
+  .ann-box-header {
+    font-family: Georgia; 
+    font-weight: bold;
+    width: 40%;
+    background-color: rgb(182, 156, 122);
+    text-align: center;
+    font-size: 36px !important;
+    border: 2px solid transparent;
+    border-color: #725d47;
+  }
+    
+  .ann-box {
+    padding-bottom: 10px;
+    font-family: Georgia; 
+    font-weight: bold;
+    width: 100%;
+    color: #333;
+    font-size: 18px !important;
+    text-align: center;
+    background-color:	#FAF9F6;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .form-check-input[type=checkbox]  {
+    border-radius: 1.25em;
+    margin: 4px 0 0;
+    line-height: normal;
+    width: 20px;
+    height: 20px;
+  }

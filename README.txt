@@ -6,7 +6,7 @@ Project 2 – JavaScript / node.js / Reactjs - Alterna-Canvas
 ## Contributers
     Isabella Hall - hallib@mail.uc.edu
     Travis Hurst - hurstts@mail.uc.edu
-	  Allison Meier - meierao@mail.uc.edu
+	Allison Meier - meierao@mail.uc.edu
     Preston Savey - saveypc@mail.uc.edu
 
 ## Project Functionality
@@ -18,13 +18,11 @@ dependencies. (listed below under the dependencies tab.)
 
 See configuration tab below to set up and run the application.
 
-// TODO: Change this to the Alterna-Canvas Instructions //
-With the application running, you should be able to navigate through three main views. 
-The home screen, recipe search, and recipe guide. The recipe guide can only be accessed 
-from Breakfast, Lunch, and Dinner recipe selections from the recipe search screen. 
-Currently there is only one recipe used on the recipe guide screen, regardless of which recipe 
-is selected. This is sufficient to show the functionality of this view.
-// TODO //
+With the application running, you should see the homescreen as a room. There are four furniture pieces
+to select that have different features. The Announcement table, Bounty board, Navigation table, and Achievement
+ shelf. These different dialogs allow you to see information on each of the three classes, they currently do
+ not navigate to Canvas. This is sufficient to show the functionality of these view.
+
 
 ## Table of contents
 
@@ -37,11 +35,9 @@ is selected. This is sufficient to show the functionality of this view.
 
 ## Installation
 
-// TODO: Change this to Github //
 Unzip the project SRC folder and open with your IDE of choice.
 
 NOTE: My testing was done using VS Code.
-// TODO //
 
 
 
@@ -51,19 +47,14 @@ Make sure node.js is installed on your system.
 (Node version 16 or higher: check in your terminal with node -v).  
 https://nodejs.org/en.
 
-// TODO: Change this to the Alterna-Canvas Dependencies //
+
 NOTE: You may need to install the following dependencies using the terminal commands below:
 
-npm install react-bootstrap bootstrap@5.1.3
-npm install --save-dev json-loader  
-npm install react-router-dom
-npm install react-scroll  
-npm install react-icons
-npm install styled-components
-npm install --save react-router-hash-link
-npm install react-tooltip    
-npm install @material-ui/core
-// TODO //
+npm install reactjs-popup --save
+npm i --save @fortawesome/fontawesome-svg-core
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/react-fontawesome@latest
+
 
 
 ## Configuration
@@ -90,8 +81,7 @@ To use this program please use the following steps:
 
 ## Help
 
-// TODO: Update with other team members //
 If you have any issues with running this application, contact me at:
 Email: hurstts@uc.mail.edu, hurst_travis@yahoo.com
 Mobile: 513-646-9327
-// TODO //
+
