@@ -14,7 +14,6 @@ const ProgressBarButCute = styled(LinearProgress)(({ theme }) => (
     }));
 
 function AchievementTile({awardName, /*progress,*/ description, /*bounty,*/}) {
-    const [open, setOpen] = React.useState(false);
     const [progress, setProgress] = useState( Math.floor(Math.random() * 100) + 1 );
 
     awardName='Example Award Name'
@@ -48,13 +47,28 @@ function AchievementTile({awardName, /*progress,*/ description, /*bounty,*/}) {
 
 
 
-export const Achievements = ({setOpenAchievements}) => {
+export const Achievements = ({openModalAchievements, setOpenAchievements}) => {
+    /*const clickRight = () => {
+
+    }
+    const clickLeft = () => {
+        
+    }*/
 
     return( 
         <div className='popup-background'>
             <div className='popup-title'>Achievements</div>
 
             <div className='popup-body'>
+            
+                <button className='leftArrow'>
+                    <span>&#8592;</span>
+                </button>
+
+                <button className='rightArrow'>
+                    <span >&#8594;</span>
+                </button>
+
                 <div className='topShelf'>
                     <AchievementTile/>
                     <AchievementTile/>
@@ -63,16 +77,12 @@ export const Achievements = ({setOpenAchievements}) => {
                     <AchievementTile/>
                     <AchievementTile/>
                 </div>
-
-
+                <button 
+                    className='modal-footer-button modal-button-cancel' 
+                    onClick= {() => {setOpenAchievements(false);}}>
+                    Close
+                </button>
             </div>
-
-            <button 
-                className='modal-footer-button modal-button-cancel' 
-                onClick= {() => {setOpenAchievements(false);}}>
-                Close
-            </button>
-
         </div>
     )
 }
