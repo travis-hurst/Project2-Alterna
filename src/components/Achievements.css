@@ -7,8 +7,8 @@
     background-position: center;
     background-repeat: repeat;
     z-index: 1;
-    height: 60%;
-    width: 32%;
+    height: 65%;
+    width: 30%;
     position: absolute;
     right: 10%;
     top: 10%;
@@ -18,10 +18,12 @@
     border-color: #7393B3;
 }
 
-.popup-title {
+.popup-title-2 {
     font-family: Georgia; 
     font-weight: bold;
     width: 40%;
+    margin-left: 30%;
+    margin-bottom: 10px;
     background-color: rgb(182, 156, 122);
     text-align: center !important;
     font-size: 36px;
@@ -29,39 +31,6 @@
     border-color: #725d47;
 }
 
-.modal-footer-button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    width: 82px;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 1px;
-    cursor: pointer;
-    font-weight: 500px;
-    position: relative;
-    outline: none;
-    gap: 8px;
-    user-select: none;
-    height: 40px;
-    padding: 0 16px;
-    text-decoration: none;
-}
-
-.modal-button-cancel {
-    margin-top: 7px;
-    font-weight: bold;
-    background-color: #da6619;
-    color: #271b13;
-}
-
-.modal-button-cancel:hover {
-    cursor: pointer;
-    border: 2px solid transparent;
-    border-color: #271b13;
-
-}
 
 /*================== AWARD ELEMENTS ==================*/
 
@@ -81,12 +50,12 @@
 }
 
 .award {
-    object-fit: contain;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 50%;
-    height: 50%;
+    margin-left: 28%;
+    width: 44% !important;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,8 +67,6 @@
     object-fit: contain;*/
     height: fit-content;
     width: fit-content;
-    max-height: 50px;
-    max-width: 50px;
 }
 .award img {
     object-fit: contain;

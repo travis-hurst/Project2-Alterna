@@ -5,6 +5,7 @@ import Popup from 'reactjs-popup';
 import {Tooltip} from '@mui/material';
 import { styled } from '@mui/material/styles';
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
+import earnedAward from '../assets/images/earned-award.png'
 
 const ProgressBarButCute = styled(LinearProgress)(({ theme }) => (
     {
@@ -22,9 +23,9 @@ function AchievementTile({awardName, /*progress,*/ description, /*bounty,*/}) {
     return (
         <div className='achievement-tile'>
             <Popup trigger= {
-                <button>
+                <button className="award">
                     <h4>{awardName}</h4>
-                    <img className='award' src='../src/assets/images/earned-award.png'/>
+                    <img src={earnedAward} alt="..." width="100%" height="auto" style={{objectFit: 'contain'}}></img>
                 </button>
                 } modal>
                 <div className='award-popup'>
@@ -57,7 +58,7 @@ export const Achievements = ({openModalAchievements, setOpenAchievements}) => {
 
     return( 
         <div className='popup-background'>
-            <div className='popup-title'>Achievements</div>
+            <div className='popup-title-2'>Achievements</div>
 
             <div className='popup-body'>
             

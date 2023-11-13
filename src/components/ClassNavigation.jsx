@@ -215,7 +215,7 @@ export const ClassNavigation = ({setOpenNavigation}) => {
     
             
           </div>
-          <button className='modal-footer-button modal-button-cancel' onClick=
+          <button className='modal-footer-button modal-button-cancel-2' onClick=
                 {() => {setOpenNavigation(false);}}>
                     Close
             </button>
