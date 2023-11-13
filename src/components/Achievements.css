@@ -1,0 +1,117 @@
+
+/*================== BASIC POP-UP ELEMENTS ==================*/
+
+.popup-background {
+    background-image: url(../assets/images/woodenbackground.jpg);
+    /* Center and scale the background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    height: 60%;
+    width: 39%;
+    position: absolute;
+    right: 30%;
+    top: 10%;
+    text-align: center;
+    box-shadow: #7393B3 0px 5px 15px;
+    border: 1px solid;
+    border-color: #7393B3;
+}
+
+.popup-title {
+    font-family: Georgia; 
+    font-weight: bold;
+    width: 40%;
+    background-color: rgb(182, 156, 122);
+    text-align: center !important;
+    font-size: 36px;
+    border: 2px solid transparent;
+    border-color: #725d47;
+}
+
+.modal-footer-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 82px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    font-weight: 500px;
+    position: relative;
+    outline: none;
+    gap: 8px;
+    user-select: none;
+    height: 40px;
+    padding: 0 16px;
+    text-decoration: none;
+}
+
+.modal-button-cancel {
+    margin-top: 7px;
+    font-weight: bold;
+    background-color: #da6619;
+    color: #271b13;
+}
+
+.modal-button-cancel:hover {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-color: #271b13;
+
+}
+
+/*================== AWARD ELEMENTS ==================*/
+
+.topShelf .bottomShelf {
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+}
+
+.achievements-tile {
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+.award {
+    object-fit: contain;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-image: url(../assets/images/earned-award.png);
+    /* Center and scale the background image 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;*/
+    height: fit-content;
+    width: fit-content;
+    max-height: 50px;
+    max-width: 50px;
+}
+.award img {
+    object-fit: contain;
+    height: fit-content;
+    width: fit-content;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+/*================== MINI MODAL ELEMENTS ==================*/
+
+.tooltip {
+    justify-content: center;
+}
